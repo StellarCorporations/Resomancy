@@ -1,6 +1,8 @@
 package com.stex.resomancy.proxy;
 
 import com.stex.resomancy.CommonProxy;
+import com.stex.resomancy.block.Blocks;
+import com.stex.resomancy.item.Items;
 
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -19,6 +21,8 @@ public class ClientProxy extends CommonProxy
     public void init(FMLInitializationEvent e)
     {
         super.init(e);
+        Blocks.registerSpecialRenderers();
+        Items.registerItemRenderer();
     }
 
     @Override

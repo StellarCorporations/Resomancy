@@ -1,14 +1,14 @@
 [
 {
   "modid": "resomancy",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "name": "Resomancy",
+  "description": "",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Ion", "Mumbo"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

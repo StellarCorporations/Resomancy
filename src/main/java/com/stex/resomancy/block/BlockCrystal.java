@@ -21,6 +21,16 @@ public class BlockCrystal extends BlockContainer
         this.setHarvestLevel("pickaxe", 2);
 
 	}
+	
+	@Override
+	public boolean isOpaqueCube() {
+	    return false;
+	}
+
+	@Override
+	public int getRenderType() {
+	    return -1;
+	}
 
 	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta)

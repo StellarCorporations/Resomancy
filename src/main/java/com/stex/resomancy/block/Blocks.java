@@ -16,12 +16,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public final class Blocks
 {
 	//Blocks
-	public static Block crystalBlock;
+	public static BlockCrystal crystalBlock;
 	
 	
 	public static void createBlocks()
 	{
-		
+		regBlock(crystalBlock = new BlockCrystal("crystalBlock"), "crystal");
 	}
 	
 	//Called from CommonProxy preInit() phase
@@ -36,6 +36,16 @@ public final class Blocks
 		regSR(Blocks.crystalBlock);
 		
 		bindTESR(TileEntityCrystal.class, new SpecialRendererCrystal());
+	}
+	
+	/**
+	 * Registers Block to GameResitry class
+	 * @param block Block class
+	 * @param name to identify Block
+	 */
+	private static void regBlock(Block block, String name)
+	{
+		GameRegistry.registerBlock(block, name);
 	}
 	
 	/**
